@@ -25,8 +25,8 @@ var run = function () {
   // sleep for an hour +/- some random time (variety is the spice of life!)
 
   var seconds = Math.floor(Math.random() * 60);
-  var minutes = 1; // Math.floor(Math.random() * 0);
-  var hours = 0; // never tweet more than once an hour
+  var minutes = Math.floor(Math.random() * 60);
+  var hours = 1; // never tweet more than once an hour
   // process.stdout.write("time until next run: " + hours + "h" + minutes + "m" + seconds + "s\n");
 
   intervalID = setInterval(function () {
