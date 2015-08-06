@@ -13,7 +13,7 @@ var Bot = new TwitterBot({
 });
 
 var tweet = function (phrase, url, hashtags) {
-  // Bot.tweet(phrase + " " + url + " " + hashtags);
+  Bot.tweet(phrase + " " + url + " " + hashtags);
   process.stdout.write(phrase + " " + url + " " + hashtags + "\n");
 };
 
@@ -50,8 +50,8 @@ var run = function () {
 
   // Compose tweet
 
-  var url = "http://grist.org"; // climate-countdown.com
-  var hashtags = "#climatecountdown"; // cntdwn2paris
+  var url = ""; // climate-countdown.com
+  var hashtags = ""; // cntdwn2paris
   // var timeLeft = getTwitterClockText();
   var text = 'Only ' + timeLeft + ' until the Paris Climate talks.';
   // var text = 'Only ' + timeLeft + ' until the #COP21 Paris #climate talks. The time for action: NOW.';
