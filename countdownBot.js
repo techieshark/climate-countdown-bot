@@ -44,9 +44,9 @@ var run = function () {
   var remaining = countdown.getRemaining();
   var timeLeft = remaining.months + " months, " +
                   remaining.days + " days, " +
-                  remaining.hours + "h " +
-                  remaining.minutes + "m " +
-                  remaining.seconds + "s";
+                  remaining.hours + "h";
+                  // remaining.minutes + "m " +
+                  // remaining.seconds + "s";
 
   // Compose tweet
 
